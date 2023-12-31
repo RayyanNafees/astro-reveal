@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^6.1.0",
-    "astro": "^3.6.4"
+    "astro": "^3.6.4",
+    "reveal.js": "^5.0.4"
   }
 }
