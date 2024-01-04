@@ -8,7 +8,7 @@ export async function GET(){
 
     const stream = new ReadableStream({
         start(controller){
-            events_listener = (counter)=>{
+            const events_listener = (counter)=>{
                 console.log(`stream.js> Emitter 'count' = ${counter}`)
                 const data = `data: ${JSON.stringify({counter})}\r\n\r\n`;
                 controller.enqueue(data)
